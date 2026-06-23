@@ -1,4 +1,8 @@
 // scripts.js - Sesión 14: Validación con Modal de Bootstrap
+/**Nombre juan manuel sanchez castro
+ * matricula:2403230435
+ * grupo:06IDPRMA
+ */
 
 /**
  * Muestra el modal de error con un mensaje personalizado.
