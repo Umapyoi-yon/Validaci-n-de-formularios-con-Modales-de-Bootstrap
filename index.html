@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contactos</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <label class="fs-2 mt-3 mb-3">Contactos</label>
+                <div>
+                    <label class="form-label" for="inputNombre">Ingresa el nombre: </label>
+                    <input class="form-control mb-3" id="inputNombre" type="text" placeholder="Nombre completo"/>
+
+                    <label class="form-label" for="inputDomicilio">Ingresa el domicilio: </label>
+                    <input class="form-control mb-4" id="inputDomicilio" type="text" placeholder="Domicilio"/>
+
+                    <button class="btn btn-primary" id="btnEnviar">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Error -->
+    <div class="modal fade" id="modalError" tabindex="-1" aria-labelledby="modalErrorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="modalErrorLabel">
+                        ⚠️ Error de Validación
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="modalErrorBody">
+                    <!-- El mensaje de error se inserta dinámicamente desde scripts.js -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
